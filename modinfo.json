@@ -1,0 +1,15 @@
+{
+    "enabled" : true,
+    "context" : "client",
+    "identifier" : "com.nixtempestas.deepspace",
+    "display_name" : "Deep Space",
+    "description" : "There is no sun, and no day. Alone in the stars",
+    "author" : "nixtempestas",
+    "category": [
+      "appearance"
+    ],
+    "date" : "2014/02/14",
+    "forum" : "https://forums.uberent.com/threads/planet-lighting.63312/#post-986458",
+    "version" : "1.0",
+    "signature" : "(not yet implemented)"
+}
