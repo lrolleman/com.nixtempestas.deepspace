@@ -94,7 +94,10 @@ void main()
     vec3 color = mix(vec3(1.0,1.0,0.3) * (2.0 + pow(ndotv, 2.0) * 10.0), vec3(1.0,0.24,0.05) * (1.0 + sqrt(ndotv) * 3.0), pow(noiseVal, 0.5 + pow(ndotv, 2.0) * 20.0));
 
     noiseVal = pow(noiseVal, 0.075);
-    color = mix(vec3(1.0,1.0,0.3) * (2.0 + pow(ndotv, 2.0) * 10.0), vec3(1.0,0.24,0.05) * (1.0 + sqrt(ndotv) * 3.0), noiseVal);
+    color = mix(vec3(1.0,1.0,0.3) * (2.0 + pow(ndotv, 2.0) * 10.0),
+                vec3(1.0,0.24,0.05) * (1.0 + sqrt(ndotv) * 3.0),
+                noiseVal);
     color = 0;
+    //color = mix(vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0));
     out_FragColor = vec4(color * 1.5, 0.001);
 }
